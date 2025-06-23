@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fonts/Karla-VariableFont_wght.ttf">
+  <title>Frontend Mentor | Contact form</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+  
+  <div class="success">
+    <div class="messageSuccess"><img src="assets/images/icon-success-check.svg" alt="">Message Sent!</div>
+    <p class="feedback">Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <form action="" method="get">
+    <h2>Contact Us</h2>
+
+      <div class="fullName">
+        <div class="firstName">
+          <label for="First Name">First Name <span class="star">*</span></label>
+          <input type="text" name="" id="firstnameInput">
+          <p class="nameError error"></p>
+        </div>
+
+        <div class="lastName">
+          <label for="last Name">Last Name <span class="star">*</span></label>
+          <input type="text" name="" id="lastnameInput">
+          <p class="nameError error"></p>
+        </div>
+      </div>
+
+      <div class="email">
+          <label for="Email">Email <span class="star">*</span></label>
+          <input type="email" name="" id="emailInput">
+          <p class="emailError error"></p>
+      </div>
+
+      <div class="query">
+        <label for="query">Query Type <span class="star">*</span></label>
+        <div class="queryOption">
+          <div class="queryItem enquiry"><span class="enquiryRadio radio 1 "></span><img class="picked" src="assets/images/icon-radio-selected.svg" alt="">General Enquiry</div>
+          <div class="queryItem request"><span class="requestRadio radio 2 "></span><img class="picked" src="assets/images/icon-radio-selected.svg" alt="">Support Request</div>
+        </div>
+        <p class="queryError error"></p>
+      </div>
+
+      <div class="message">
+        <label for="message">Message <span class="star">*</span></label>
+        <textarea name="" id="messageInput" cols="30" rows="10"></textarea>
+        <p class="messageError error"></p>
+      </div>
+
+     <div class="consent">
+        <div class="consentText">
+          <span class="check"></span>
+          <img class="checked" src="assets/images/icon-checkbox-check.svg" alt="">
+          <p> I hereby consent to being contacted by the team <span class="star">*</span></p>
+        </div>
+        <p class="error consentError"></p>
+      </div>
+    
+      
+     <button class="submitBtn">Submit</button>
+  </form>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Mahmud++;</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    margin: 0;
+    background-color: hsl(148, 38%, 91%);
+    font-family: Karla, sans-serif;
+}
+
+form{
+    width: 460px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px; 
+   padding: 25px;
+   background-color: hsl(0, 0%, 100%);
+   border-radius: 9px;
+}
+
+.fullName{
+    display: flex;
+    gap: 10px;
+}
+
+#firstnameInput, #lastnameInput{
+    width: 96.2%;
+    height: 35px;
+    margin-top: 5px;
+}
+div.success{
+   background-color: hsl(187, 24%, 22%); 
+   padding: 20px;
+   color: white;
+   border-radius: 5px;
+   display: none;
+}
+div.messageSuccess{
+    
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+    
+}
+div.email{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#emailInput{
+    height: 35px;
+}
+
+div.queryOption{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.queryFocus{
+    background-color: hsla(169, 82%, 27%, .2);
+    
+}
+.queryFocus .picked{
+    display: inline-block;
+}
+div.queryOption .enquiry, div.queryOption .request{
+    
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 35px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    gap: 5px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+div.queryOption .enquiry:hover, div.queryOption .request:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+#requestRadio, #enquiryRadio{
+    margin: 0;
+}
+div.message{
+    display: flex;
+    flex-direction: column;
+}
+#messageInput{
+    height: 75px;
+}
+
+
+p{
+    margin: 0;
+    font-size: 10px;
+    padding: 0;
+}
+p.error{
+    color: hsl(0, 66%, 54%);
+    margin-top: 10px ;
+    height: 11px;
+}
+div.consent{
+    margin-bottom: 10px;
+}
+#consentCheck{
+    margin-left: 0;
+    margin-right: 8px;
+}
+.consentText{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+   
+}
+p.consentError{
+    margin-top: 5px;
+}
+button{
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    padding: 15px 0;
+    color: white;
+    font-size: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(170, 83%, 19%);
+}
+input, textarea{
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 5px;
+    resize: none;
+    cursor: pointer;
+}
+input:hover, textarea:hover{
+    border: 1px solid hsl(169, 82%, 27%);
+}
+label{
+    font-size: 13px;
+    margin: 5px 0px;
+}
+span.check{
+    width: 12px;
+    height: 12px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-right: 8px;
+    border-radius: 3px;
+    display: inline-block;
+}
+span.star{
+    color: hsl(169, 82%, 27%);
+}
+img.checked{
+    width: 16px;
+    display: none;
+    margin-right: 8px;
+}
+.radio{
+    width: 12px;
+    height: 12px;
+    border: 1px solid hsl(186, 15%, 59%);
+    margin-right: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+img.picked{
+    width: 14px;
+    display: none;
+    margin-right: 8px;
+}
+.picked{
+    display: none;
+    position: absolute;
+}
+
+.removeSpan{
+    display: none;
+}
+
+.removeBox{
+    display: none;
+}
+.checkBox{
+    display: inline-block;
+}
+
+@media screen and (max-width:550px) {
+    body{
+        height: auto;
+        padding: 10px 0px;
+       
+    }
+    form{
+        width: 80%;
+         position: relative;
+         overflow-y: auto;
+    }
+    .fullName{
+        flex-direction: column;
+        
+    }
+    .firstName, .lastName{
+        width: 100%;
+    
+    
+    }
+    #firstnameInput, #lastnameInput{
+        width: 99%;
+    
+    }
+    div.queryOption{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
